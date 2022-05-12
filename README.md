@@ -1172,3 +1172,28 @@ xwifi0: flags=-28605<UP,BROADCAST,RUNNING,MULTICAST,DYNAMIC>  mtu 1500
 
 * Run on openwrt 
 
+---
+# ** RTMP FFMPEG **
+---
+
+## 1. RTMP 服务器安装
+  * apt install nginx
+  * apt install libnginx-mod-rtmp
+  * nginx.conf
+	  ```
+	  rtmp {
+	     server {
+		    listen 1935;
+		    application myapp {
+			live on;
+		    }
+	      }
+	  }
+	  ```
+  * nginx restart
+
+## 2. FFMPEG 推流
+  * `ffmpeg  -y -t 50000 -f video4linux2 -re -i /dev/video0  -f flv -flvflags no_duration_filesize -g 5 -b 700000 rtmp://106.14.10.223:1935/myapp/test`
+  
+## 3. VLC 拉流
+  * rtmp://IP:port/myapp/test 点击播放
