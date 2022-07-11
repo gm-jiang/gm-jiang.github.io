@@ -1146,9 +1146,11 @@ let g:lightline = {
 * 加载驱动模块： `modprobe cfg80211`
 * 加载驱动模块： `insmod xxx.ko`
 
-* `wpa_supplicant install`
-
-## 5. 测试
+* 安装 `wpa_supplicant`
+  * wpa_supplicant的安装方法有两种：第一种是在 ubuntu 中使用命令：`sudo apt-get install wpasupplicant` 该命令可将wpa_supplicant、wpa_cli、wpa_passphrase直接安装
+  * 第二种是直接在官网下载源代码，编译、安装 [refer to link](https://blog.csdn.net/u012503786/article/details/79541811)
+  
+  ## 5. 测试
 
 * 修改 `/etc/wpasupplicant/wpa_supplicant.conf` 文件，添加如下内容：
 
