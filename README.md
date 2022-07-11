@@ -1105,7 +1105,7 @@ let g:lightline = {
 
 * Beaglebone black
 * ESP32-S2
-* ![image](https://user-images.githubusercontent.com/15644391/178234651-9a7dfdb4-1ecf-4c21-9ee8-6feae6635eb6.png)
+* ![image](https://user-images.githubusercontent.com/15644391/178235511-815ddc81-30f3-44eb-ac97-3a2799fda902.png)
 
 
 ## 2. 系统
