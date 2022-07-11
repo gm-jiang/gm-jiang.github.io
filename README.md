@@ -1118,6 +1118,8 @@ let g:lightline = {
   * 驱动编译支持：
   * Wi-Fi 配置管理工具：wpa_supplicant
   * 系统登录: UAR0 / ssh
+  * UART0 硬件连接
+    * ![image](https://user-images.githubusercontent.com/15644391/178180945-79077622-6f2b-48f8-a737-1d6eff7bf131.png)
 
 * ESP32-S2 Saola-1_v1.2
 
