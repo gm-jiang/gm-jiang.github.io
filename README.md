@@ -1145,7 +1145,7 @@ let g:lightline = {
   * ![image](https://user-images.githubusercontent.com/15644391/178183889-90450dea-049f-4c9f-9117-77470e5a366b.png)
 * 加载驱动模块： `modprobe cfg80211`
 * 加载驱动模块： `insmod xxx.ko`
-  * ![Uploading image.png…]()
+  * ![image](https://user-images.githubusercontent.com/15644391/178231259-97dc7ca0-31f6-409d-ac76-ed8c7ffa752c.png)
 
 
 * 安装 `wpa_supplicant`
