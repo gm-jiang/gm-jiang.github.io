@@ -1105,6 +1105,8 @@ let g:lightline = {
 
 * Beaglebone black
 * ESP32-S2
+* ![image](https://user-images.githubusercontent.com/15644391/178234651-9a7dfdb4-1ecf-4c21-9ee8-6feae6635eb6.png)
+
 
 ## 2. 系统
 
@@ -1124,14 +1126,17 @@ let g:lightline = {
 
 * ESP32-S2 Saola-1_v1.2
 
-  * ESP-IDF version
-  * Toolchain: 
+  * esp-idf branch： esp32_usb_80211_wifi 
+  * commit：e9ee1bb876dec6fdda9e646b68ccf92025c861a4
+  * toolchain： xtensa-esp32s2-elf-gcc  gcc version 8.4.0 (crosstool-NG esp-2021r1)
 
-## 3. 固件
+## 3. ESP32-S2 固件编译
 
-* source code: 
+* esp-idf branch： esp32_usb_80211_wifi 
+* idf.py build
+* idf.py flash
 
-## 4. 驱动编译
+## 4. linux 驱动编译
 
 * 编译环境：
   * 接入网络：配置 BBB 连接网络
@@ -1147,12 +1152,11 @@ let g:lightline = {
 * 加载驱动模块： `insmod xxx.ko`
   * ![image](https://user-images.githubusercontent.com/15644391/178231259-97dc7ca0-31f6-409d-ac76-ed8c7ffa752c.png)
 
-
 * 安装 `wpa_supplicant`
   * wpa_supplicant的安装方法有两种：第一种是在 ubuntu 中使用命令：`sudo apt-get install wpasupplicant` 该命令可将wpa_supplicant、wpa_cli、wpa_passphrase直接安装
   * 第二种是直接在官网下载源代码，编译、安装 [refer to link](https://blog.csdn.net/u012503786/article/details/79541811)
   
-  ## 5. 测试
+## 5. 测试
 
 * 修改 `/etc/wpasupplicant/wpa_supplicant.conf` 文件，添加如下内容：
 
@@ -1186,24 +1190,13 @@ network={
   * ![image](https://user-images.githubusercontent.com/15644391/178230668-743f9456-b2e9-4fd9-9f70-6c1d70ca53a3.png)
 
 
+* Iperf Test
+  * ![image](https://user-images.githubusercontent.com/15644391/178234798-b136f644-7c5d-4ee9-8e0e-79cfa5a713cd.png)
 
-
-* 查看
-
-```apl
-xwifi0: flags=-28605<UP,BROADCAST,RUNNING,MULTICAST,DYNAMIC>  mtu 1500
-        inet 192.168.50.102  netmask 255.255.255.0  broadcast 192.168.50.255
-        inet6 fe80::7edf:a1ff:fe00:39f6  prefixlen 64  scopeid 0x20<link>
-        ether 7c:df:a1:00:39:f6  txqueuelen 1000  (Ethernet)
-        RX packets 4133  bytes 582881 (569.2 KiB)
-        RX errors 0  dropped 0  overruns 0  frame 0
-        TX packets 13327  bytes 14515027 (13.8 MiB)
-        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
-```
 
 ## 6. 遗留问题
 
-* Run on openwrt 
+* Run on OpenWRT that linux kernel version >= 5.4.0
 
 ---
 # **RTMP FFMPEG**
