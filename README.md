@@ -1145,6 +1145,8 @@ let g:lightline = {
   * ![image](https://user-images.githubusercontent.com/15644391/178183889-90450dea-049f-4c9f-9117-77470e5a366b.png)
 * 加载驱动模块： `modprobe cfg80211`
 * 加载驱动模块： `insmod xxx.ko`
+  * ![Uploading image.png…]()
+
 
 * 安装 `wpa_supplicant`
   * wpa_supplicant的安装方法有两种：第一种是在 ubuntu 中使用命令：`sudo apt-get install wpasupplicant` 该命令可将wpa_supplicant、wpa_cli、wpa_passphrase直接安装
@@ -1165,8 +1167,26 @@ network={
 * 连接
 
 ```
- sudo wpa_supplicant -i wlan0 -c /etc/wpa_supplicant.conf
+ sudo wpa_supplicant -i xwifi0 -c /etc/wpa_supplicant/wpa_supplicant.conf & (后台运行)
+ log：debian@beaglebone:~$ Successfully initialized wpa_supplicant
+	xwifi0: Trying to associate with 18:31:bf:4b:8b:68 (SSID='ESP-Audio' freq=2437 MHz)
+	Failed to add supported operating classes IE
+	xwifi0: Associated with 18:31:bf:4b:8b:68
+	xwifi0: CTRL-EVENT-CONNECTED - Connection to 18:31:bf:4b:8b:68 completed [id=0 id_str=]
+	xwifi0: CTRL-EVENT-SUBNET-STATUS-UPDATE status=0
 ```
+
+* DHCP Client 
+
+```
+ sudo dhclient & (后台运行)
+```
+
+* PING Test
+  * ![image](https://user-images.githubusercontent.com/15644391/178230668-743f9456-b2e9-4fd9-9f70-6c1d70ca53a3.png)
+
+
+
 
 * 查看
 
