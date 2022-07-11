@@ -1112,6 +1112,7 @@ let g:lightline = {
 
   * 系统版本：`bone-debian-10.3-iot-armhf-2020-04-06-4gb.img`
   * 系统安装: 烧写系统到 SD卡 (推荐4GB 以上) `sudo dd bs=4M if=xxx.img of=/dev/sdd`
+  * SD 卡系统启动： 按住 S2 按键， 接入电源，等待 4 个 LED 灯全亮，松开 S2 按键
   * 内核版本: `Linux beaglebone 4.19.94-ti-r42`
   * GCC 版本：`gcc (Debian 8.3.0-6) 8.3.0`
   * 软件包支持: `iperf`
@@ -1130,13 +1131,21 @@ let g:lightline = {
 
 * source code: 
 
-## 4. 驱动
+## 4. 驱动编译
 
-* source code: https://github.com/gm-jiang/beagleboneblack_src
-* 编译
-* `modprobe cfg80211`
-* `insmod xxx.ko`
-* 编译环境：`/lib/module/build` 目录缺失问题，需要更新一下软件列表，然后 `sudo apt-get install linux-headers-$(uname -r) `
+* 编译环境：
+  * 接入网络：配置 BBB 连接网络
+  * 更新源： `sudo apt-get update`
+  * 目录缺失：缺少 `/lib/module/build` 问题，需要更新一下软件列表，然后 `sudo apt-get install linux-headers-$(uname -r) `
+  * 内核版本: `Linux beaglebone 4.19.94-ti-r42`
+  * GCC 版本：`gcc (Debian 8.3.0-6) 8.3.0`
+
+* 下载驱动源码：source code: https://github.com/gm-jiang/beagleboneblack_src
+* 编译： `make`
+  * ![image](https://user-images.githubusercontent.com/15644391/178183889-90450dea-049f-4c9f-9117-77470e5a366b.png)
+* 加载驱动模块： `modprobe cfg80211`
+* 加载驱动模块： `insmod xxx.ko`
+
 * `wpa_supplicant install`
 
 ## 5. 测试
