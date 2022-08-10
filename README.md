@@ -1207,6 +1207,8 @@ network={
 ## Device 端软件架构
 
 * ![USB_20220810111722](https://user-images.githubusercontent.com/15644391/183869446-4ad25e24-5625-4870-9df4-ea4e809ccf84.jpg)
+* ![USB_20220810111707](https://user-images.githubusercontent.com/15644391/183870237-b9a0a34b-cced-4727-86ee-e19f53dec871.jpg)
+
 
 ---
 # **RTMP FFMPEG**
