@@ -1192,6 +1192,8 @@ network={
 * PING Test
   * ![image](https://user-images.githubusercontent.com/15644391/178230668-743f9456-b2e9-4fd9-9f70-6c1d70ca53a3.png)
 
+* PING 指定网卡
+  * ping -S 192.168.50.97 www.baidu.com
 
 * Iperf Test
   * ![image](https://user-images.githubusercontent.com/15644391/178234798-b136f644-7c5d-4ee9-8e0e-79cfa5a713cd.png)
@@ -1199,7 +1201,12 @@ network={
 
 ## 6. 遗留问题
 
-* Run on OpenWRT that linux kernel version >= 5.4.0
+* Run on OpenWRT that linux kernel version >= 5.4.0 (done)
+* Run on Ubuntu18.04 that linux kernel version == 5.4.0-122-generic (done)
+
+## Device 端软件架构
+
+* ![USB_20220810111722](https://user-images.githubusercontent.com/15644391/183869446-4ad25e24-5625-4870-9df4-ea4e809ccf84.jpg)
 
 ---
 # **RTMP FFMPEG**
