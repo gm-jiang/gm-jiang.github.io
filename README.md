@@ -668,11 +668,11 @@ Handshake  | NYET     | 0110B     | No response yet from receiver
 
 ## 5. 传输
 * 在USB的传输中，定义了4种传输类型：
-  * 控制传输 (Control Transfer)
-    * SETUP Stage + DATA Stage (optional) + STATUS Stage
-  * 中断传输 (Interrupt Transfer)
-  * 批量传输 (Bulk Transfer)
-  * 同步传输 (Isochronous)
+* 控制传输 (Control Transfer)  (SETUP Stage + DATA Stage (optional) + STATUS Stage) 
+* 中断传输 (Interrupt Transfer)
+* 批量传输 (Bulk Transfer)
+* 同步传输 (Isochronous)
+* https://www.usbmadesimple.co.uk/ums_3.htm
 
 * 
     |                | **Control**                     | **Bulk**                                         | **Interrupt**                                     | **Isoch**                                   |
