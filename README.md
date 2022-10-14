@@ -1236,3 +1236,5 @@ network={
   
 ## 3. VLC 拉流
   * rtmp://IP:port/myapp/test 点击播放
+  
+## 4. Aliyun Login: ssh gmjiang@106.14.10.223
