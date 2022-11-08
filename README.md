@@ -1009,6 +1009,13 @@ let g:NERDTreeShowLineNumbers = 1
 let Tlist_Use_Right_Window = 1
 let Tlist_WinWidth = 30
 
+" Resize window
+nnoremap <S-Up> :resize -1<CR>
+nnoremap <S-Down> :resize +1<CR>
+nnoremap <S-Left> :vertical resize -1<CR>
+nnoremap <S-Right> :vertical resize +1<CR>
+
+
 set laststatus=2
 let g:lightline = {
       \ 'colorscheme': 'powerline',
