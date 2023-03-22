@@ -981,6 +981,10 @@ Plugin 'kien/ctrlp.vim'
 
 Plugin 'itchyny/lightline.vim'
 
+Plugin 'itchyny/lightline.vim'
+
+Plugin 'mileszs/ack.vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -1015,6 +1019,11 @@ nnoremap <S-Down> :resize +1<CR>
 nnoremap <S-Left> :vertical resize -1<CR>
 nnoremap <S-Right> :vertical resize +1<CR>
 
+" Configure Ack
+nnoremap <c-u> :Ack<space>
+
+" Configure Git blame
+nnoremap <c-g> :Git blame<CR>
 
 set laststatus=2
 let g:lightline = {
