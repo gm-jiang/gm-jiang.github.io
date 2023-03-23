@@ -981,8 +981,6 @@ Plugin 'kien/ctrlp.vim'
 
 Plugin 'itchyny/lightline.vim'
 
-Plugin 'itchyny/lightline.vim'
-
 Plugin 'mileszs/ack.vim'
 
 " All of your Plugins must be added before the following line
