@@ -956,6 +956,9 @@ set autoindent
 filetype off                  " required
 set cul
 
+" highlight VertSplit ctermbg=100 ctermfg=100
+" highlight VertSplit ctermbg=white ctermfg=black
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
