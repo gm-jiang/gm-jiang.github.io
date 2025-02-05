@@ -943,7 +943,7 @@ git clone http://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 ```
 
-## 2. 配置文件 `.vimrc`
+## 2. 按装 libs
 ```
 sudo apt-get install exuberant-ctags ack
 
@@ -1045,7 +1045,23 @@ let g:lightline = {
       \ }
 ```
 
-## 4. VIM 插件 `NERDTree`
+## 4. YouCompleteMe For VIM v8.1
+```
+Plugin 'Valloric/YouCompleteMe'
+# git clone https://github.com/Valloric/YouCompleteMe.git
+
+# git checkout 3ededaed2f9923d50bf3860ba8dace0f7d2724cd
+
+# git submodule update --init --recursive
+
+# ./install.sh
+
+//.vimrc config
+let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm_extra_conf.py'
+let g:ycm_python_binary_path = '/usr/bin/python3'
+```
+
+## 5. VIM 插件 `NERDTree`
 
 
 | Key  |  Function                                          |      |
