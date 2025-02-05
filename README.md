@@ -942,7 +942,13 @@ k：篡改码
 git clone http://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 ```
+
 ## 2. 配置文件 `.vimrc`
+```
+sudo apt-get install exuberant-ctags ack
+
+```
+## 3. 配置文件 `.vimrc`
 
 ```
 syntax enable
@@ -1039,7 +1045,7 @@ let g:lightline = {
       \ }
 ```
 
-## 3. VIM 插件 `NERDTree`
+## 4. VIM 插件 `NERDTree`
 
 
 | Key  |  Function                                          |      |
