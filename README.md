@@ -931,6 +931,39 @@ k：篡改码
 413a560d438014c686a3faa6da59d430127361ba3eb430612fdff78d0ce586c8
 
 
+---
+# **ZSH**
+---
+
+## zsh and oh-my-zsh with p10k theme
+
+```
+sudo apt-get install zsh 
+```
+
+```
+install oh-my-zsh  refer: https://github.com/ohmyzsh/ohmyzsh (gitee for no VPN)
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+```
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+```
+
+```
+set ZSH_THEME="powerlevel10k/powerlevel10k" in ~/.zshrc
+```
+
+```
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+设置~/.zshrc，把zsh-autosuggestions添加到 Oh My Zsh 要加载的插件列表中
+
+# ubuntu 显示乱码问题
+打开Terminal 点击preference ->选中描述文件，更改字体即可
+
+# auto-suggestion issues with tmux
+export TERM=xterm-256color
+```
 
 ---
 # **VIM**
